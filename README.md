@@ -4,7 +4,7 @@ Strapi comes with a full featured [Command Line Interface](https://docs.strapi.i
 
 ### `develop`
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+Jalankan server Strapi di terminal dengan autoReload. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
 
 ```
 npm run develop
@@ -14,7 +14,7 @@ yarn develop
 
 ### `start`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+Jalankan server Strapi di terminal tanpa autoReload. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
 
 ```
 npm run start
@@ -36,8 +36,24 @@ yarn build
 
 Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
 
+Deploy ke Strapi Cloud
+
 ```
 yarn strapi deploy
+# or
+npm run strapi deploy
+```
+
+## Postman
+
+Gunakan Postman untuk testing API anda, menggunakan `POST`, `GET`, `PUT`, `DELETE`.
+
+```
+# local
+http://localhost:1337/api/<pluralApiId>
+
+# public (cloud)
+https://your-project-title.strapiapp.com/api/<pluralApiId>
 ```
 
 ## 📚 Learn more
