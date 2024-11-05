@@ -1,0 +1,54 @@
+{
+    "kind": "collectionType",
+    "collectionName": "libraries",
+    "info": {
+        "singularName": "library",
+        "pluralName": "libraries",
+        "displayName": "Books",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "Title": {
+            "type": "string",
+            "required": true,
+            "unique": true
+        },
+        "Description": {
+            "type": "blocks",
+            "required": false
+        },
+        "Author": {
+            "type": "string",
+            "required": true
+        },
+        "Genre": {
+            "type": "enumeration",
+            "enum": [
+                "Fiction",
+                "Non-Fiction",
+                "Biograph",
+                "Romance",
+                "History",
+                "Technology"
+            ],
+            "required": true
+        },
+        "Year": {
+            "type": "biginteger",
+            "required": true
+        },
+        "ISBN": {
+            "type": "string",
+            "unique": true,
+            "required": true
+        },
+        "Copies_Available": {
+            "type": "integer",
+            "required": true
+        }
+    }
+}
